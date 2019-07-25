@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+
+{% block content %}
+    <h1>Home  </h1>
+
+<!--
+        Jinja templating  :  A unique way of templating which allows the use of expresions as loops or conditions
+        in the html webpages
+  -->
+    {% if items %}
+            The place is: <br>
+            {% for item in items %}
+                <li> {{ item }} </li>
+            {% endfor %}
+    {% endif %}
+
+{% endblock %}
+
+
+{% block content2 %}
+
+    <h1> this is content 2 </h1>
+
+{% endblock %}

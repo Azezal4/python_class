@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+
+    {% block content %}
+        <h1> this is the hotel webpage </h1>
+
+        {% if location %}
+            The name of the hotel is: <br>
+            {%for name in location%}
+                <li> {{name}} </li>
+            {% endfor %}
+        {% endif %}
+
+    {% endblock %}
+
+
